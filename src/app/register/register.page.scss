@@ -1,0 +1,46 @@
+ion-content {
+    --background: #fff; // Establece el color de fondo
+  
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 20px;
+  
+      form {
+        width: 100%;
+        max-width: 360px;
+  
+        ion-item {
+          margin-top: 10px;
+          --padding-start: 0;
+          --padding-end: 0;
+          --inner-padding-end: 0;
+  
+          ion-label[floating] {
+            margin-top: -8px; // Ajusta los labels para que estén más arriba
+          }
+        }
+      }
+  
+      .login-link {
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    ion-content {
+      .form-container {
+        padding: 15px;
+        form {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  
+  

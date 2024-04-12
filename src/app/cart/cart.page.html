@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Carrito de Compras</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of cartItems; let i = index">
+      <ion-thumbnail slot="start">
+        <img [src]="productDetails[item.productId]?.imageUrl || 'default-image-path.jpg'">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ productDetails[item.productId]?.name }}</h2>
+        <p>Cantidad: {{ item.quantity }}</p>
+        
+        <h3>{{ productDetails[item.productId]?.price * item.quantity | currency }}</h3>
+        <ion-label>
+          <h2>{{ productDetails[item.productId]?.name }}</h2>
+          <ion-item>
+            <ion-input type="number" [(ngModel)]="quantity[item.productId]" min="1" max="{{item.quantity}}"></ion-input>
+            <ion-buttons slot="end">
+              <ion-button color="danger" (click)="deleteItem(quantity[item.productId], i)">
+                <ion-icon name="trash"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+          </ion-item>
+        
+        </ion-label>
+        
+      </ion-label>      
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="checkout()">Checkout</ion-button>
+</ion-content>

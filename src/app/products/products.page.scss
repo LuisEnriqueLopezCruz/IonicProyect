@@ -1,0 +1,53 @@
+ion-card {
+    margin: 8px;
+    transition: transform 0.2s;
+    height: 400px;  // Altura fija para todas las tarjetas
+    display: flex;
+    flex-direction: column;
+    
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    img {
+      width: 100%;  // La imagen ocupa todo el ancho de la tarjeta
+      height: 200px;  // Altura fija para las imágenes
+      object-fit: scale-down;  // Mantiene la proporción de la imagen sin deformarla
+    }
+  
+    ion-card-header,
+    ion-card-content {
+      padding: 8px;  // Espaciado interno para el contenido de la tarjeta
+    }
+  
+    ion-card-title {
+      font-size: 1.2em;
+    }
+  
+    ion-card-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;  // Espacia el contenido uniformemente
+  
+      ion-badge {
+        align-self: flex-start;  // Alinea el badge al inicio del contenido
+      }
+  
+      ion-item {
+        align-self: center;  // Centra el input de cantidad
+        width: 90%;  // Ancho del input de cantidad
+      }
+    }
+  }
+  
+  ion-grid {
+    padding: 0;
+  }
+  
+  ion-content {
+    height: 80vh;
+    overflow: auto;
+  }
+  

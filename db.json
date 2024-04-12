@@ -1,0 +1,118 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "user1",
+      "email": "user1@example.com",
+      "password": "hash-of-password1"
+    },
+    {
+      "id": "2",
+      "username": "user2",
+      "email": "user2@example.com",
+      "password": "hash-of-password2"
+    },
+    {
+      "id": "58de"
+    },
+    {
+      "id": "edb9",
+      "username": "user5",
+      "password": "5"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Manzana Royal Gala",
+      "description": "Manzanas frescas y jugosas de tipo Royal Gala.",
+      "price": 0.99,
+      "imageUrl": "https://www.recetasnestle.com.mx/sites/default/files/inline-images/tipos-de-manzana-royal-gala.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Pera",
+      "description": "Descripción del Producto 2",
+      "price": 19.99,
+      "imageUrl": "https://media.istockphoto.com/id/186861864/es/foto/verde-con-la-hoja-de-higo.jpg?s=612x612&w=0&k=20&c=cDSuOUommGbvutErn7tF6sn32991AGNpg1tIPpnOIQA="
+    },
+    {
+      "id": "3",
+      "name": "Tenis Jordan Concord",
+      "description": "Descripción del Producto 3",
+      "price": 15.45,
+      "imageUrl": "https://images.stockx.com/images/Air-Jordan-11-Retro-Concord-2018-Product.png?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1686755753&q=60"
+    },
+    {
+      "id": "4",
+      "name": "Cinturon Gucci",
+      "description": "Descripción del Producto 4",
+      "price": 22.99,
+      "imageUrl": "https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1634145319/659416_92TIC_9769_001_100_0000_Light.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Tesla Cibertruck",
+      "description": "Descripción del Producto 5",
+      "price": 5.99,
+      "imageUrl": "https://cnnespanol.cnn.com/wp-content/uploads/2024/02/240220091259-tesla-cybertruck-full-169.jpg?quality=100&strip=info"
+    }
+  ],
+  "carts": [
+    {
+      "id": "1",
+      "userId": "2",
+      "registro": "2",
+      "products": [
+        {
+          "productId": "1",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "99cc",
+      "userId": "2",
+      "registro": "2",
+      "products": [
+        {
+          "productId": "5",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "8cd8",
+      "userId": "2",
+      "products": [
+        {
+          "productId": "3",
+          "quantity": 3
+        }
+      ],
+      "registro": 8258
+    },
+    {
+      "id": "fadf",
+      "userId": "2",
+      "products": [
+        {
+          "productId": "4",
+          "quantity": 5
+        }
+      ],
+      "registro": 5648
+    },
+    {
+      "id": "c1c4",
+      "userId": "2",
+      "products": [
+        {
+          "productId": "5",
+          "quantity": 6
+        }
+      ],
+      "registro": 9581
+    }
+  ]
+}

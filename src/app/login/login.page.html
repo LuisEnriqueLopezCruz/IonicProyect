@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <div class="login-container">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <ion-item>
+        <ion-label position="floating">Nombre de Usuario</ion-label>
+        <ion-input  formControlName="username" name="username" type="text" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input formControlName="password" name="password" type="password" required></ion-input>
+      </ion-item>
+      <ion-button type="submit" expand="block">Iniciar Sesión</ion-button>
+    </form>
+    <p class="register-link">
+      ¿Deseas registrarte? <a routerLink="/register">Regístrate</a>
+    </p>
+  </div>
+</ion-content>
+

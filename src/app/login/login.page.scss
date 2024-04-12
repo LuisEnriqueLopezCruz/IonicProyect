@@ -1,0 +1,33 @@
+ion-content {
+    --background: #fff; // Asegúrate de que este color coincida con el diseño de tu app
+  
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 20px;
+  
+      form {
+        width: 100%; // O puedes usar max-width para limitar el ancho máximo
+        max-width: 360px; // Ajusta este valor según tus necesidades
+  
+        ion-item {
+          margin-top: 10px;
+          
+          --padding-start: 0; // Ajusta el padding inicial si es necesario
+  
+          ion-label[floating] {
+            transform: translateY(-8px); // Ajusta este valor para mover el label más arriba
+          }
+        }
+      }
+  
+      .register-link {
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+  
