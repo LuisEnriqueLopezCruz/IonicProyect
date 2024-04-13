@@ -38,6 +38,7 @@ export class CartPage implements OnInit {
   deleteItem(quantity: number, item: any) {
     
     let nu: number =0
+    // \console.log(first)
     console.log(item)
     
     this.cartService.loadCartItems(this.userId).subscribe(carts =>{
