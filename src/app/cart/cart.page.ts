@@ -79,12 +79,12 @@ export class CartPage implements OnInit {
         next: (product: Product) => {
           console.log(product);
           this.productDetails[item.productId] = product[0];
-          this.quantity[item.productId] = item.quantity || 1;  // Asumiendo que tienes un campo cantidad en ProductInCart
+          this.quantity[item.productId] = item.quantity || 1;  
         },
         error: (err) => console.error('Error fetching product details:', err),
       });
     });
-    this.cartItems = items; // Assign cartItems after initiating product detail loading
+    this.cartItems = items; 
     console.log(this.cartItems);
   }
   checkout() {

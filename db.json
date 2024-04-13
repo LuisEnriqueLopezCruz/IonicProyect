@@ -93,26 +93,15 @@
       "registro": 8258
     },
     {
-      "id": "fadf",
+      "id": "e6df",
       "userId": "2",
       "products": [
         {
-          "productId": "4",
-          "quantity": 5
+          "productId": "3",
+          "quantity": 1
         }
       ],
-      "registro": 5648
-    },
-    {
-      "id": "c1c4",
-      "userId": "2",
-      "products": [
-        {
-          "productId": "5",
-          "quantity": 6
-        }
-      ],
-      "registro": 9581
+      "registro": 6971
     }
   ]
 }
