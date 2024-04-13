@@ -1,5 +1,5 @@
 ion-content {
-    --background: #fff; // Establece el color de fondo
+    --background: #fff; 
   
     .form-container {
       display: flex;
@@ -20,7 +20,7 @@ ion-content {
           --inner-padding-end: 0;
   
           ion-label[floating] {
-            margin-top: -8px; // Ajusta los labels para que estén más arriba
+            margin-top: -8px;
           }
         }
       }

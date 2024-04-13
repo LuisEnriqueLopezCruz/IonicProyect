@@ -15,7 +15,7 @@ export class LoginPage implements OnInit {
     private toastController: ToastController,private router: Router,
     private formBuilder: FormBuilder) {
       this.loginForm = this.formBuilder.group({
-        username: ['', [Validators.required, Validators.minLength(3)]],  // Puedes agregar validaciones
+        username: ['', [Validators.required, Validators.minLength(3)]],  
         password: ['', [Validators.required]]
       });
      }

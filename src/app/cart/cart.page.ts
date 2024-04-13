@@ -38,6 +38,7 @@ export class CartPage implements OnInit {
   deleteItem(quantity: number, item: any) {
     
     let nu: number =0
+    console.log(first)
     console.log(item)
     
     this.cartService.loadCartItems(this.userId).subscribe(carts =>{
@@ -79,12 +80,12 @@ export class CartPage implements OnInit {
         next: (product: Product) => {
           console.log(product);
           this.productDetails[item.productId] = product[0];
-          this.quantity[item.productId] = item.quantity || 1;  // Asumiendo que tienes un campo cantidad en ProductInCart
+          this.quantity[item.productId] = item.quantity || 1; 
         },
         error: (err) => console.error('Error fetching product details:', err),
       });
     });
-    this.cartItems = items; // Assign cartItems after initiating product detail loading
+    this.cartItems = items;
     console.log(this.cartItems);
   }
   checkout() {

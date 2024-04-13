@@ -14,7 +14,7 @@ export class PageinitierPage implements OnInit {
   }
   logout() {
    
-    this.router.navigate(['/login']); // Redirige al login
+    this.router.navigate(['/login']); 
   }
 
   goToCart(){
